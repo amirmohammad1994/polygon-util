@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.1)
+set(CMAKE_CXX_STANDARD 11)
+project(simple-polygon-lib)
+include_directories("include" "third-party/include")
+file(GLOB SOURCES "src/*.cpp" "third-party/src/*.cpp" "src/*.c")
+add_executable(polygon ${SOURCES})
